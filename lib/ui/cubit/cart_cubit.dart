@@ -5,12 +5,11 @@ import 'package:food_order/data/entity/products.dart';
 class CartCubit extends Cubit<List<Order>> {
   CartCubit() : super([]);
 
-  /// ÜRÜN EKLE
   void addProduct(Products product) {
     final List<Order> updatedList = List.from(state);
 
     final index = updatedList.indexWhere(
-          (order) => order.productId == product.product_id,
+      (order) => order.productId == product.product_id,
     );
 
     if (index == -1) {
@@ -29,12 +28,11 @@ class CartCubit extends Cubit<List<Order>> {
     emit(updatedList);
   }
 
-  /// ÜRÜN ÇIKAR
   void removeProduct(Products product) {
     final List<Order> updatedList = List.from(state);
 
     final index = updatedList.indexWhere(
-          (order) => order.productId == product.product_id,
+      (order) => order.productId == product.product_id,
     );
 
     if (index != -1) {
@@ -48,16 +46,13 @@ class CartCubit extends Cubit<List<Order>> {
     emit(updatedList);
   }
 
-  /// ÜRÜN ADEDİ
   int getQuantity(String productId) {
-    final index =
-    state.indexWhere((order) => order.productId == productId);
+    final index = state.indexWhere((order) => order.productId == productId);
 
     if (index == -1) return 0;
     return state[index].quantity;
   }
 
-  /// 🟢 TOPLAM FİYAT
   double get totalPrice {
     double total = 0;
 
@@ -68,7 +63,6 @@ class CartCubit extends Cubit<List<Order>> {
     return total;
   }
 
-  /// SEPETİ TEMİZLE
   void clearCart() {
     emit([]);
   }
