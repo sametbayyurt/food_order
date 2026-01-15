@@ -12,11 +12,10 @@ The system is designed for restaurant staff usage:
 
 ## 🚀 Features
 
-### Customer / Waiter Side
+### Waiter Side
 
 - Category-based product listing
 - Add / remove products to cart
-- Product-based quantity control
 - Automatic cart total price calculation
 - Create orders by selecting table number
 
@@ -65,12 +64,17 @@ The system is designed for restaurant staff usage:
 
 ## 📱 Screenshots
 
-![Landing](screenshots/landing.png)
-![Menu](screenshots/menu.png)
-![Order Detail](screenshots/order_detail.png)
-![Login](screenshots/login.png)
-![Register](screenshots/register.png)
-![Orders](screenshots/orders.png)
+<p>
+  <img src="screenshots/landing.png" width="240" />
+  <img src="screenshots/menu.png" width="240" />
+  <img src="screenshots/order_detail.png" width="240" />
+</p>
+<p>
+  <img src="screenshots/login.png" width="240" />
+  <img src="screenshots/register.png" width="240" />
+  <img src="screenshots/orders.png" width="240" />
+</p>
+
 
 
 ---
